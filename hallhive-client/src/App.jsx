@@ -18,10 +18,12 @@ import AdminNoticePage from "./pages/AdminNoticePage";
 import RoomApprove from "./pages/RoomApprove";
 import AdminEventPage from "./pages/AdminEventPage";
 import AllowedStudentsPage from "./pages/AllowedStudentsPage";
+import demoPage from  "./pages/demoPage"
 
 function App() {
   return (
     <Routes>
+      <Route path="/" element={<demoPage />} />
       <Route path="/" element={<HomePage />} />
       <Route path="/notice" element={<NoticePage />} />
       <Route path="/login" element={<LoginPage />} />
